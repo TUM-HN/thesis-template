@@ -1,0 +1,33 @@
+\begin{titlepage}
+  \centering
+
+  \IfFileExists{logos/tum-\fg.pdf}{%
+    \includegraphics[height=20mm]{logos/tum-black_alt.pdf}
+  }{%
+    \vspace*{20mm}
+  }
+
+  \vspace{5mm}
+  {\huge\MakeUppercase{School of \getSchool{} --- \getFaculty{}} \par}
+
+  \vspace{5mm}
+  {\large\MakeUppercase{\getUniversity{}} \par}
+
+  \vspace{20mm}
+  {\Large \getDoctype{} in \getDegree{} \par}
+
+  \vspace{15mm}
+  {\huge\bfseries \getTitle{} \par}
+
+  \vspace{10mm}
+  {\huge\bfseries \foreignlanguage{ngerman}{\getTitleGer{}} \par}
+
+  \vspace{15mm}
+  \begin{tabular}{l l}
+    Author:          & \getAuthor{}         \\
+    Examiner:      & \getSupervisor{}     \\
+    Supervisor:         & \getAdvisor{}        \\
+    Submission Date: & \getSubmissionDate{} \\
+  \end{tabular}
+
+\end{titlepage}
